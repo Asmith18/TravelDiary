@@ -13,7 +13,9 @@ class LogTableViewCell: UITableViewCell {
     @IBOutlet weak var logAddressLabel: UILabel!
     @IBOutlet weak var logDateLabel: UILabel!
     
-    func updateViews() {
-    //TODO: - Finish this
+    func updateViews(log: Log) {
+        logNameLabel.text = log.logTitle
+        logAddressLabel.text = log.logAddress
+        logDateLabel.text = log.logDate.stringValue()
     }
 }// end of class
